@@ -301,7 +301,7 @@ ICollection Items_CreateDataSource() {
 	
 	command.Fill(ds, (i_Items_curpage - 1) * Items_PAGENUM, Items_PAGENUM,"Items");
 	OleDbCommand ccommand = new OleDbCommand(Items_sCountSQL, Utility.Connection);
-	int PageTemp=(int)ccommand.ExecuteScalar();
+	//int PageTemp=(int)ccommand.ExecuteScalar();
 	Items_Pager.MaxPage=(PageTemp%Items_PAGENUM)>0?(int)(PageTemp/Items_PAGENUM)+1:(int)(PageTemp/Items_PAGENUM);
 	bool AllowScroller=Items_Pager.MaxPage==1?false:true;
 	
