@@ -54,6 +54,7 @@ namespace Book_Store
 	public void ValidateNumeric(object source, ServerValidateEventArgs args) {
 			try{
 				Decimal temp=Decimal.Parse(args.Value);
+				int a = 5;
 				args.IsValid=true;
 		        }catch{
 				args.IsValid=false;	}
