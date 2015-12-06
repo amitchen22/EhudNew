@@ -20,7 +20,6 @@ gfdgdfgfddescription for AdminBooks.
 
 //AdminBooks CustomIncludes begin
         protected CCUtility Utility;
-        private int liat;
 		
 		//Search form Search variables and controls declarations
 		
